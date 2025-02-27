@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Independent Film Project</manduva>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-container fade-in">
+            <div class="text-center mb-4">
+                <h1 class="text-center mb-4">Welcome to Our Film Project</h1>
+                <p class="lead">Welcome, <span id="userEmail"></span>!</p>
+                <button onclick="logout()" class="btn btn-outline-primary mb-4">Logout</button>
+            </div>
+
+            <div class="text-center mb-4">
+                            
+            <div class="donation-section mt-5">
+                <h2 class="text-center">Help Us Make This Film</h2>
+                <div class="donation-bar">
+                    <div class="donation-progress" style="width: 30%"></div>
+                </div>
+                <p class="text-center">₹30,00,000 of ₹1,00,00,000 raised</p>
+                
+                <div class="donor-list mb-4">
+                    <!-- Donor names will be added dynamically via JavaScript -->
+                </div>
+                
+                <div class="text-center">
+                    <a href="donate.html" class="btn btn-donate text-white">
+                        Donate Now & Be a Producer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Manduva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-container fade-in">
+            <!-- Movie Info Section -->
+            <div class="movie-info mb-5">
+                <h1 class="text-center mb-4">Manduva</h1>
+                <h3 class="text-center">Written & Directed by</h3>
+                <h2 class="text-center mb-3">Uday Kiran Podeti & Team</h2>
+                <div class="genre-tags text-center mb-4">
+                    <span class="badge bg-primary me-2">Crime</span>
+                    <span class="badge bg-primary me-2">Comedy</span>
+                    <span class="badge bg-primary">Thriller</span>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="countdown-timer text-center mb-4">
+                    <h4>Campaign Ends In:</h4>
+                    <div id="countdown" class="d-flex justify-content-center gap-3">
+                        <div class="time-block">
+                            <span id="days">00</span>
+                            <span class="label">Days</span>
+                        </div>
+                        <div class="time-block">
+                            <span id="hours">00</span>
+                            <span class="label">Hours</span>
+                        </div>
+                        <div class="time-block">
+                            <span id="minutes">00</span>
+                            <span class="label">Minutes</span>
+                        </div>
+                        <div class="time-block">
+                            <span id="seconds">00</span>
+                            <span class="label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="target-info text-center mb-4">
+                    <h3>Production Budget: ₹1,00,00,000</h3>
+                    <div class="progress-wrapper">
+                        <div class="progress" style="height: 25px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                 role="progressbar" style="width: 30%">
+                                30%
+                            </div>
+                        </div>
+                        <p class="mt-2">₹0 raised of ₹1,00,00,000 goal</p>
+                    </div>
+                </div>
+
+                <!-- Synopsis -->
+                <div class="synopsis p-4 bg-light rounded">
+                    <h4 class="mb-3">Synopsis</h4>
+                    <p>In a quiet village, a father and son run a small toddy business at a local brewing spot called Manduva. The father, a hardworking climber, extracts toddy from palm trees, while the son reluctantly sells it, dreaming of a different life. When the son asks for a bike, the father agrees—but only if he helps with the business, forcing the young man into a routine he resents.</p>
+                    <p>One day, their world turns upside down when a dead body is discovered at Manduva. The villagers immediately blame the toddy, but the father and son know there's more to the story. As suspicion grows, the son, a movie fanatic, begins using his cinematic knowledge to investigate the mystery.</p>
+                    <p>Amid the chaos, the protagonist forms a close bond with a 10-year-old boy who often visits Manduva to watch movies with him. The boy, quiet yet observant, finds comfort in their friendship, escaping his troubled home where his alcoholic father torments his mother.</p>
+                    <p>As the protagonist pieces together the truth, he stumbles upon a shocking revelation—he unknowingly killed the victim. But the real mastermind is someone he never suspected. The boy, in a desperate act of revenge, manipulated the protagonist into poisoning his own father using a toxic plant from Manduva.</p>
+                    <p>Faced with the weight of this revelation, the protagonist is left at a crossroads: Will he expose the truth and risk everything, or live with the guilt of a crime he never intended to commit?</p>
+                </div>
+            </div>
+
+            <!-- Previous Work -->
+            <div class="text-center mb-4">
+                <p class="lead">Before you contribute, please watch our previous work:</p>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/lCbkxbakL_0" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Project Timeline -->
+            <div class="timeline-section mb-5">
+                <h3 class="text-center mb-4">Project Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Pre-production</h4>
+                            <p>March 2025 - May 2025</p>
+                            <ul>
+                                <li>Script Finalization</li>
+                                <li>Location Scouting</li>
+                                <li>Casting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Production</h4>
+                            <p>June 2025 - August 2025</p>
+                            <ul>
+                                <li>Principal Photography</li>
+                                <li>Sound Recording</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Post-production</h4>
+                            <p>September 2025 - November 2025</p>
+                            <ul>
+                                <li>Editing</li>
+                                <li>Sound Design</li>
+                                <li>Color Grading</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Release</h4>
+                            <p>December 2025</p>
+                            <ul>
+                                <li>Premier</li>
+                                <li>Theater Release</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section mb-5">
+                <h3 class="text-center mb-4">Meet the Team</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-member">
+                           
+                            <h4>Uday Kiran Podeti</h4>
+                            <p>Writer & Director</p>
+                        </div>
+                    </div>
+                    <!-- Add more team members as needed -->
+                </div>
+            </div>
+
+            <!-- Producer Perks -->
+            <div class="perks-section mb-5">
+                <h3 class="text-center mb-4">Producer Perks</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="perk-card">
+                            <h4>Silver Producer</h4>
+                            <h5>₹10,000</h5>
+                            <ul>
+                                <li>Special Thanks in Credits</li>
+                                <li>Digital Copy of the Movie</li>
+                                <li>Behind-the-scenes Access</li>
+                            </ul>
+                            <a href="donate.html?tier=silver" class="btn btn-primary w-100">Select</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="perk-card featured">
+                            <h4>Gold Producer</h4>
+                            <h5>₹50,000</h5>
+                            <ul>
+                                <li>Associate Producer Credit</li>
+                                <li>Invitation to Premier</li>
+                                <li>Meet & Greet with Team</li>
+                                <li>All Silver Perks</li>
+                            </ul>
+                            <a href="donate.html?tier=gold" class="btn btn-primary w-100">Select</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="perk-card">
+                            <h4>Platinum Producer</h4>
+                            <h5>₹1,00,000</h5>
+                            <ul>
+                                <li>Executive Producer Credit</li>
+                                <li>Set Visit During Shooting</li>
+                                <li>Exclusive Movie Merchandise</li>
+                                <li>All Gold Perks</li>
+                            </ul>
+                            <a href="donate.html?tier=platinum" class="btn btn-primary w-100">Select</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section mb-5">
+                <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                When will the movie be released?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The movie is scheduled for release in December 2025.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more FAQ items -->
+                </div>
+            </div>
+
+            <!-- Social Share -->
+            <div class="social-share text-center mb-5">
+                <h4>Share This Project</h4>
+                <div class="social-buttons">
+                    <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn btn-outline-success me-2"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="btn btn-outline-danger"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Donate Button -->
+            <div class="text-center mb-5">
+                <a href="donate.html" class="btn btn-donate btn-lg text-white">
+                    Donate Now & Be a Producer
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
